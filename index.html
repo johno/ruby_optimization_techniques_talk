@@ -177,18 +177,25 @@ It's so consistent that you start being able to guess how things will work, and 
           <h3>YARV Program Execution</h3>
           <img src="http://patshaughnessy.net/assets/2012/6/18/process.png">
         </section>
-
-        <!-- MVM, unicorn, etc. SLB, uses for web servers, fielding numerous, simple requests. -->
-        <section>
-          <h1>Multiple Virtual Machines</h1>
-        </section>
         
         <section>
-          <h1>Unicorn</h1>
+          <h3>Unicorn</h3>
+          <ul>
+            <li>Spawn multiple ruby apps or workers concurrently with parallel processes.</li>
+            <li>Limited by Processor Cores</li>
+            <li>Ruby 2.0 supports Copy-on-write compatability meaning each process can work out of
+            the same memory block.</li>
+          </ul>
         </section>
 
         <section>
-          <h1>Async Workers</h1>
+          <h3>Async Workers</h3>
+          Use messaging queues to process pieces outside of main thread.
+          <ul>
+            <li>Sidekiq</li>
+            <li>Delayed Job</li>
+            <li>Resqueue</li>
+          </ul>
         </section>
 
         <!-- Kthxbai -->
