@@ -14,7 +14,10 @@ body {
   background: white;
   background-color: white; }
 
-.reveal section img { border: none !important; }
+.reveal section img {
+  border: none !important;
+  box-shadow: none !important;
+}
 
 .reveal {
   font-family: "Lato", sans-serif;
