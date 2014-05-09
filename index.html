@@ -64,8 +64,8 @@ And he somehow made it all work together so well that you don't even notice that
 
 It's so consistent that you start being able to guess how things will work, and you're right most of the time. It's beautiful. And fun. And practical."
             </quote>
-            <br>
-            <em>`&#8212;` Steve Yegge</em>
+            <br> 
+            <em>&#8212; Steve Yegge</em>
         </section>
 
         <section>
@@ -116,10 +116,15 @@ It's so consistent that you start being able to guess how things will work, and 
         <!-- Why is it so slow? Green threads, GIL, scripting language, duck/dynamically typed, optimizes dev happiness over speed, lack of async/true concurrency, eager/lazy loading, monkey patching, map.select.map.super_polynomial inefficiencies -->
         <section>
           <h3>
-            Ruby isn't perfect.
-            <small>Global Interpreter Lock</small>
+            Ruby isn't perfect. <br>
+            <small>Global Interpreter Lock</small>  
           </h3>
           <img src="https://cloud.githubusercontent.com/assets/1424573/2922187/04779ce6-d6fe-11e3-95e5-45b8f8e4dedc.png">
+        </section>
+
+        <section>
+          <h1>MRI</h1>
+          <code>.rb file => tokenization => AST => RVM</code>
         </section>
 
         <!-- Improvements by the community -->
@@ -136,17 +141,29 @@ It's so consistent that you start being able to guess how things will work, and 
         <!-- Rubinius -->
         <section>
           <h1>Rubinius</h1>
+          <p>Started as a project to write a Ruby interpreter in Ruby. <br> <em>Failed.</em></p>
         </section>
 
-        <!-- YARV/MRI -->
+        <!-- Rubinius -->
         <section>
-          <h1>Ruby is improving quickly</h1>
+          <h1>Rubinius</h1>
+          <p>Rewritten to outperform the current MRI interpreter by using C++. <br> <em>Failed.</em></p>
+        </section>
+        
+        <!-- Rubinius -->
+        <section>
+          <h1>Rubinius</h1>
+          <h3>Accidentally Awesome.</h3>
+          <p>Ruby designed for concurrency. <br> <em>Success.</em></p>
         </section>
 
         <!-- YARV/MRI -->
         <section>
           <h1>1.8.7. Was. Slow.</h1>
           <img src="https://cloud.githubusercontent.com/assets/1424573/2869079/0305431c-d259-11e3-8b58-6f2ea6ff23e9.png">
+        </section>
+        <section>
+          <h1>Ruby is improving quickly</h1>
         </section>
 
         <!-- YARV/MRI -->
@@ -158,14 +175,22 @@ It's so consistent that you start being able to guess how things will work, and 
 
         <!-- YARV/MRI -->
         <section>
-          <!-- Picture of the tokenization => parse tree => compilation => YARV instructions steps -->
-          <h4>Bytecode was introduced, yay.</h4>
+          <h3>YARV Program Execution</h3>
+          <code>.rb file => tokenization => parse tree => bytecode translation => YARV</code>
           <img src="http://patshaughnessy.net/assets/2012/6/18/process.png">
         </section>
 
         <!-- MVM, unicorn, etc. SLB, uses for web servers, fielding numerous, simple requests. -->
         <section>
           <h1>Multiple Virtual Machines</h1>
+        </section>
+        
+        <section>
+          <h1>Unicorn</h1>
+        </section>
+
+        <section>
+          <h1>Async/Background Workers</h1>
         </section>
 
         <!-- Kthxbai -->
