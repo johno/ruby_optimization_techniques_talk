@@ -56,11 +56,10 @@
           <img src="https://cloud.githubusercontent.com/assets/1424573/2922092/bd7a3110-d6fc-11e3-99f9-94d8c8cfad54.jpg">
         </section>
         <section>
-          <quote>"For the most part, Ruby took Perl's string processing and Unix integration as-is, meaning the syntax is identical, and so right there, before anything else happens, you already have the Best of Perl. And that's a great start, especially if you don't take the rest of Perl.
+          <quote>"
+... Matz took the best of list processing from Lisp, and the best of OO from Smalltalk and other langauges, and the best iterators from CLU, and pretty much the best of everything from everyone. <br><br>
 
-But then Matz took the best of list processing from Lisp, and the best of OO from Smalltalk and other langauges, and the best iterators from CLU, and pretty much the best of everything from everyone.
-
-And he somehow made it all work together so well that you don't even notice that it has all this stuff.
+And he somehow made it all work together so well that you don't even notice that it has all this stuff. <br><br>
 
 It's so consistent that you start being able to guess how things will work, and you're right most of the time. It's beautiful. And fun. And practical."
             </quote>
@@ -70,7 +69,7 @@ It's so consistent that you start being able to guess how things will work, and 
 
         <section>
           <h1>History</h1>
-          <img src="https://cloud.githubusercontent.com/assets/1424573/2922066/3b9c37a6-d6fc-11e3-8786-969b03a85a66.JPG">
+          <img src="https://cloud.githubusercontent.com/assets/1424573/2922066/3b9c37a6-d6fc-11e3-8786-969b03a85a66.JPG" height="50%">
         </section>
 
         <!-- How is Ruby typically used? Gems, Rails, prototyping, meta, CLI, servers, Github, Homebrew, Rubymotion-->
@@ -178,18 +177,25 @@ It's so consistent that you start being able to guess how things will work, and 
           <h3>YARV Program Execution</h3>
           <img src="http://patshaughnessy.net/assets/2012/6/18/process.png">
         </section>
-
-        <!-- MVM, unicorn, etc. SLB, uses for web servers, fielding numerous, simple requests. -->
-        <section>
-          <h1>Multiple Virtual Machines</h1>
-        </section>
         
         <section>
-          <h1>Unicorn</h1>
+          <h3>Unicorn</h3>
+          <ul>
+            <li>Spawn multiple ruby apps or workers concurrently with parallel processes.</li>
+            <li>Limited by Processor Cores</li>
+            <li>Ruby 2.0 supports Copy-on-write compatability meaning each process can work out of
+            the same memory block.</li>
+          </ul>
         </section>
 
         <section>
-          <h1>Async/Background Workers</h1>
+          <h3>Async Workers</h3>
+          Use messaging queues to process pieces outside of main thread.<br><br>
+          <ul>
+            <li>Sidekiq</li>
+            <li>Delayed Job</li>
+            <li>Resqueue</li>
+          </ul>
         </section>
 
         <!-- Kthxbai -->
