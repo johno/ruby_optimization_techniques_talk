@@ -14,7 +14,7 @@ body {
   background: white;
   background-color: white; }
 
-img { border: none !important; }
+.reveal section img { border: none !important; }
 
 .reveal {
   font-family: "Lato", sans-serif;
