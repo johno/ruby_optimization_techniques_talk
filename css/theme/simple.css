@@ -14,6 +14,8 @@ body {
   background: white;
   background-color: white; }
 
+img { border: none !important; }
+
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 36px;
